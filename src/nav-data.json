@@ -1,0 +1,74 @@
+[
+  {
+    "label": "Services",
+    "links": [
+      {
+        "label": "Workflow automation",
+        "href": "#services"
+      },
+      {
+        "label": "AI integrations",
+        "href": "#workflows"
+      },
+      {
+        "label": "Team training",
+        "href": "#training"
+      },
+      {
+        "label": "Tool adoption",
+        "href": "#training"
+      }
+    ]
+  },
+  {
+    "label": "Solutions",
+    "links": [
+      {
+        "label": "Operations",
+        "href": "#workflows"
+      },
+      {
+        "label": "Sales & marketing",
+        "href": "#workflows"
+      },
+      {
+        "label": "Knowledge & support",
+        "href": "#examples"
+      }
+    ]
+  },
+  {
+    "label": "Approach",
+    "links": [
+      {
+        "label": "How I work",
+        "href": "#process"
+      },
+      {
+        "label": "Human oversight",
+        "href": "#visibility"
+      },
+      {
+        "label": "Your handover",
+        "href": "#services"
+      }
+    ]
+  },
+  {
+    "label": "About",
+    "links": [
+      {
+        "label": "Meet Alex",
+        "href": "#about"
+      },
+      {
+        "label": "My philosophy",
+        "href": "#about"
+      },
+      {
+        "label": "Get in touch",
+        "href": "mailto:alex@alexpena.dev"
+      }
+    ]
+  }
+]

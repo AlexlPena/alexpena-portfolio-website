@@ -1,0 +1,9 @@
+{
+  "user-welcome.tsx": "/assets/lang-user-welcome-tsx.svg",
+  "reset-password.tsx": "/assets/lang-reset-password-tsx.svg",
+  "user-invite.tsx": "/assets/lang-user-invite-tsx.svg",
+  "weekly-digest.tsx": "/assets/lang-weekly-digest-tsx.svg",
+  "Intuitive analytics": "/assets/lang-intuitive-analytics.svg",
+  "Full visibility": "/assets/lang-full-visibility.svg",
+  "Domain authentication": "/assets/lang-domain-authentication.svg"
+}

@@ -1,0 +1,731 @@
+{
+  "Operations": {
+    "icon": "\u2194",
+    "snippets": {
+      "Client onboarding": {
+        "code": "// Client onboarding\n// Example design \u2014 no live connections\n\nworkflow {\n  goal: \"Give your team time back\"\n  owner: \"Your team stays in control\"\n\n  steps: [\n    \"Trigger: a signed proposal arrives\",\n    \"Create the client workspace and project\",\n    \"Collect onboarding details with a form\",\n    \"Draft a kickoff agenda with AI\",\n    \"Ask you to review before anything is sent\",\n    \"Sync approved tasks to your project tool\"\n  ]\n\n  safeguards: \"Review \u00b7 retries \u00b7 activity logs\"\n}",
+        "tokens": [
+          [
+            "comment",
+            "// Client onboarding"
+          ],
+          [
+            "comment",
+            "// Example design \u2014 no live connections"
+          ],
+          [
+            "plain",
+            ""
+          ],
+          [
+            "plain",
+            "workflow {"
+          ],
+          [
+            "string",
+            "  goal: \"Give your team time back\""
+          ],
+          [
+            "string",
+            "  owner: \"Your team stays in control\""
+          ],
+          [
+            "plain",
+            ""
+          ],
+          [
+            "plain",
+            "  steps: ["
+          ],
+          [
+            "string",
+            "    \"Trigger: a signed proposal arrives\","
+          ],
+          [
+            "string",
+            "    \"Create the client workspace and project\","
+          ],
+          [
+            "string",
+            "    \"Collect onboarding details with a form\","
+          ],
+          [
+            "string",
+            "    \"Draft a kickoff agenda with AI\","
+          ],
+          [
+            "string",
+            "    \"Ask you to review before anything is sent\","
+          ],
+          [
+            "string",
+            "    \"Sync approved tasks to your project tool\""
+          ],
+          [
+            "plain",
+            "  ]"
+          ],
+          [
+            "plain",
+            ""
+          ],
+          [
+            "string",
+            "  safeguards: \"Review \u00b7 retries \u00b7 activity logs\""
+          ],
+          [
+            "plain",
+            "}"
+          ]
+        ]
+      },
+      "Meeting follow-up": {
+        "code": "// Meeting follow-up\n// Example design \u2014 no live connections\n\nworkflow {\n  goal: \"Give your team time back\"\n  owner: \"Your team stays in control\"\n\n  steps: [\n    \"Trigger: a meeting transcript is ready\",\n    \"Extract decisions, owners, and due dates\",\n    \"Flag missing or unclear commitments\",\n    \"Draft the follow-up for human approval\",\n    \"Create approved tasks and share the summary\"\n  ]\n\n  safeguards: \"Review \u00b7 retries \u00b7 activity logs\"\n}",
+        "tokens": [
+          [
+            "comment",
+            "// Meeting follow-up"
+          ],
+          [
+            "comment",
+            "// Example design \u2014 no live connections"
+          ],
+          [
+            "plain",
+            ""
+          ],
+          [
+            "plain",
+            "workflow {"
+          ],
+          [
+            "string",
+            "  goal: \"Give your team time back\""
+          ],
+          [
+            "string",
+            "  owner: \"Your team stays in control\""
+          ],
+          [
+            "plain",
+            ""
+          ],
+          [
+            "plain",
+            "  steps: ["
+          ],
+          [
+            "string",
+            "    \"Trigger: a meeting transcript is ready\","
+          ],
+          [
+            "string",
+            "    \"Extract decisions, owners, and due dates\","
+          ],
+          [
+            "string",
+            "    \"Flag missing or unclear commitments\","
+          ],
+          [
+            "string",
+            "    \"Draft the follow-up for human approval\","
+          ],
+          [
+            "string",
+            "    \"Create approved tasks and share the summary\""
+          ],
+          [
+            "plain",
+            "  ]"
+          ],
+          [
+            "plain",
+            ""
+          ],
+          [
+            "string",
+            "  safeguards: \"Review \u00b7 retries \u00b7 activity logs\""
+          ],
+          [
+            "plain",
+            "}"
+          ]
+        ]
+      }
+    }
+  },
+  "Sales": {
+    "icon": "\u25ce",
+    "snippets": {
+      "Lead intake": {
+        "code": "// Lead intake\n// Example design \u2014 no live connections\n\nworkflow {\n  goal: \"Give your team time back\"\n  owner: \"Your team stays in control\"\n\n  steps: [\n    \"Trigger: a website inquiry comes in\",\n    \"Validate the details and check for duplicates\",\n    \"Summarize the request with AI\",\n    \"Route the lead to the right pipeline\",\n    \"Draft a personalized response for review\",\n    \"Log every step in your CRM\"\n  ]\n\n  safeguards: \"Review \u00b7 retries \u00b7 activity logs\"\n}",
+        "tokens": [
+          [
+            "comment",
+            "// Lead intake"
+          ],
+          [
+            "comment",
+            "// Example design \u2014 no live connections"
+          ],
+          [
+            "plain",
+            ""
+          ],
+          [
+            "plain",
+            "workflow {"
+          ],
+          [
+            "string",
+            "  goal: \"Give your team time back\""
+          ],
+          [
+            "string",
+            "  owner: \"Your team stays in control\""
+          ],
+          [
+            "plain",
+            ""
+          ],
+          [
+            "plain",
+            "  steps: ["
+          ],
+          [
+            "string",
+            "    \"Trigger: a website inquiry comes in\","
+          ],
+          [
+            "string",
+            "    \"Validate the details and check for duplicates\","
+          ],
+          [
+            "string",
+            "    \"Summarize the request with AI\","
+          ],
+          [
+            "string",
+            "    \"Route the lead to the right pipeline\","
+          ],
+          [
+            "string",
+            "    \"Draft a personalized response for review\","
+          ],
+          [
+            "string",
+            "    \"Log every step in your CRM\""
+          ],
+          [
+            "plain",
+            "  ]"
+          ],
+          [
+            "plain",
+            ""
+          ],
+          [
+            "string",
+            "  safeguards: \"Review \u00b7 retries \u00b7 activity logs\""
+          ],
+          [
+            "plain",
+            "}"
+          ]
+        ]
+      }
+    }
+  },
+  "Support": {
+    "icon": "\u25c7",
+    "snippets": {
+      "Inbox triage": {
+        "code": "// Inbox triage\n// Example design \u2014 no live connections\n\nworkflow {\n  goal: \"Give your team time back\"\n  owner: \"Your team stays in control\"\n\n  steps: [\n    \"Trigger: a support request arrives\",\n    \"Classify intent and urgency\",\n    \"Find relevant approved knowledge sources\",\n    \"Draft a response with source references\",\n    \"Escalate uncertain or sensitive requests\",\n    \"Let your team approve the final answer\"\n  ]\n\n  safeguards: \"Review \u00b7 retries \u00b7 activity logs\"\n}",
+        "tokens": [
+          [
+            "comment",
+            "// Inbox triage"
+          ],
+          [
+            "comment",
+            "// Example design \u2014 no live connections"
+          ],
+          [
+            "plain",
+            ""
+          ],
+          [
+            "plain",
+            "workflow {"
+          ],
+          [
+            "string",
+            "  goal: \"Give your team time back\""
+          ],
+          [
+            "string",
+            "  owner: \"Your team stays in control\""
+          ],
+          [
+            "plain",
+            ""
+          ],
+          [
+            "plain",
+            "  steps: ["
+          ],
+          [
+            "string",
+            "    \"Trigger: a support request arrives\","
+          ],
+          [
+            "string",
+            "    \"Classify intent and urgency\","
+          ],
+          [
+            "string",
+            "    \"Find relevant approved knowledge sources\","
+          ],
+          [
+            "string",
+            "    \"Draft a response with source references\","
+          ],
+          [
+            "string",
+            "    \"Escalate uncertain or sensitive requests\","
+          ],
+          [
+            "string",
+            "    \"Let your team approve the final answer\""
+          ],
+          [
+            "plain",
+            "  ]"
+          ],
+          [
+            "plain",
+            ""
+          ],
+          [
+            "string",
+            "  safeguards: \"Review \u00b7 retries \u00b7 activity logs\""
+          ],
+          [
+            "plain",
+            "}"
+          ]
+        ]
+      }
+    }
+  },
+  "Marketing": {
+    "icon": "\u2733",
+    "snippets": {
+      "Content repurposing": {
+        "code": "// Content repurposing\n// Example design \u2014 no live connections\n\nworkflow {\n  goal: \"Give your team time back\"\n  owner: \"Your team stays in control\"\n\n  steps: [\n    \"Start with an approved article or transcript\",\n    \"Extract key ideas and your brand guidance\",\n    \"Draft channel-specific posts with AI\",\n    \"Check facts against the source material\",\n    \"Send the drafts to your review queue\",\n    \"Publish only after your approval\"\n  ]\n\n  safeguards: \"Review \u00b7 retries \u00b7 activity logs\"\n}",
+        "tokens": [
+          [
+            "comment",
+            "// Content repurposing"
+          ],
+          [
+            "comment",
+            "// Example design \u2014 no live connections"
+          ],
+          [
+            "plain",
+            ""
+          ],
+          [
+            "plain",
+            "workflow {"
+          ],
+          [
+            "string",
+            "  goal: \"Give your team time back\""
+          ],
+          [
+            "string",
+            "  owner: \"Your team stays in control\""
+          ],
+          [
+            "plain",
+            ""
+          ],
+          [
+            "plain",
+            "  steps: ["
+          ],
+          [
+            "string",
+            "    \"Start with an approved article or transcript\","
+          ],
+          [
+            "string",
+            "    \"Extract key ideas and your brand guidance\","
+          ],
+          [
+            "string",
+            "    \"Draft channel-specific posts with AI\","
+          ],
+          [
+            "string",
+            "    \"Check facts against the source material\","
+          ],
+          [
+            "string",
+            "    \"Send the drafts to your review queue\","
+          ],
+          [
+            "string",
+            "    \"Publish only after your approval\""
+          ],
+          [
+            "plain",
+            "  ]"
+          ],
+          [
+            "plain",
+            ""
+          ],
+          [
+            "string",
+            "  safeguards: \"Review \u00b7 retries \u00b7 activity logs\""
+          ],
+          [
+            "plain",
+            "}"
+          ]
+        ]
+      }
+    }
+  },
+  "Finance": {
+    "icon": "\u25a4",
+    "snippets": {
+      "Invoice intake": {
+        "code": "// Invoice intake\n// Example design \u2014 no live connections\n\nworkflow {\n  goal: \"Give your team time back\"\n  owner: \"Your team stays in control\"\n\n  steps: [\n    \"Trigger: a supplier invoice arrives\",\n    \"Extract fields from the document\",\n    \"Validate totals and detect duplicates\",\n    \"Match the invoice to an existing supplier\",\n    \"Route exceptions to a person for review\",\n    \"Export approved records to your finance tool\"\n  ]\n\n  safeguards: \"Review \u00b7 retries \u00b7 activity logs\"\n}",
+        "tokens": [
+          [
+            "comment",
+            "// Invoice intake"
+          ],
+          [
+            "comment",
+            "// Example design \u2014 no live connections"
+          ],
+          [
+            "plain",
+            ""
+          ],
+          [
+            "plain",
+            "workflow {"
+          ],
+          [
+            "string",
+            "  goal: \"Give your team time back\""
+          ],
+          [
+            "string",
+            "  owner: \"Your team stays in control\""
+          ],
+          [
+            "plain",
+            ""
+          ],
+          [
+            "plain",
+            "  steps: ["
+          ],
+          [
+            "string",
+            "    \"Trigger: a supplier invoice arrives\","
+          ],
+          [
+            "string",
+            "    \"Extract fields from the document\","
+          ],
+          [
+            "string",
+            "    \"Validate totals and detect duplicates\","
+          ],
+          [
+            "string",
+            "    \"Match the invoice to an existing supplier\","
+          ],
+          [
+            "string",
+            "    \"Route exceptions to a person for review\","
+          ],
+          [
+            "string",
+            "    \"Export approved records to your finance tool\""
+          ],
+          [
+            "plain",
+            "  ]"
+          ],
+          [
+            "plain",
+            ""
+          ],
+          [
+            "string",
+            "  safeguards: \"Review \u00b7 retries \u00b7 activity logs\""
+          ],
+          [
+            "plain",
+            "}"
+          ]
+        ]
+      }
+    }
+  },
+  "Knowledge": {
+    "icon": "\u2318",
+    "snippets": {
+      "Internal assistant": {
+        "code": "// Internal assistant\n// Example design \u2014 no live connections\n\nworkflow {\n  goal: \"Give your team time back\"\n  owner: \"Your team stays in control\"\n\n  steps: [\n    \"Connect the documents your team approves\",\n    \"Respect access rules and source ownership\",\n    \"Retrieve relevant guidance for a question\",\n    \"Answer using references to original sources\",\n    \"Say when the answer is not available\",\n    \"Capture feedback to improve the knowledge base\"\n  ]\n\n  safeguards: \"Review \u00b7 retries \u00b7 activity logs\"\n}",
+        "tokens": [
+          [
+            "comment",
+            "// Internal assistant"
+          ],
+          [
+            "comment",
+            "// Example design \u2014 no live connections"
+          ],
+          [
+            "plain",
+            ""
+          ],
+          [
+            "plain",
+            "workflow {"
+          ],
+          [
+            "string",
+            "  goal: \"Give your team time back\""
+          ],
+          [
+            "string",
+            "  owner: \"Your team stays in control\""
+          ],
+          [
+            "plain",
+            ""
+          ],
+          [
+            "plain",
+            "  steps: ["
+          ],
+          [
+            "string",
+            "    \"Connect the documents your team approves\","
+          ],
+          [
+            "string",
+            "    \"Respect access rules and source ownership\","
+          ],
+          [
+            "string",
+            "    \"Retrieve relevant guidance for a question\","
+          ],
+          [
+            "string",
+            "    \"Answer using references to original sources\","
+          ],
+          [
+            "string",
+            "    \"Say when the answer is not available\","
+          ],
+          [
+            "string",
+            "    \"Capture feedback to improve the knowledge base\""
+          ],
+          [
+            "plain",
+            "  ]"
+          ],
+          [
+            "plain",
+            ""
+          ],
+          [
+            "string",
+            "  safeguards: \"Review \u00b7 retries \u00b7 activity logs\""
+          ],
+          [
+            "plain",
+            "}"
+          ]
+        ]
+      }
+    }
+  },
+  "People": {
+    "icon": "\u25c9",
+    "snippets": {
+      "Team onboarding": {
+        "code": "// Team onboarding\n// Example design \u2014 no live connections\n\nworkflow {\n  goal: \"Give your team time back\"\n  owner: \"Your team stays in control\"\n\n  steps: [\n    \"Trigger: a new team member is confirmed\",\n    \"Create a role-specific onboarding checklist\",\n    \"Share approved resources and training\",\n    \"Schedule reminders for outstanding tasks\",\n    \"Keep access approvals with your team\",\n    \"Track progress in one shared workspace\"\n  ]\n\n  safeguards: \"Review \u00b7 retries \u00b7 activity logs\"\n}",
+        "tokens": [
+          [
+            "comment",
+            "// Team onboarding"
+          ],
+          [
+            "comment",
+            "// Example design \u2014 no live connections"
+          ],
+          [
+            "plain",
+            ""
+          ],
+          [
+            "plain",
+            "workflow {"
+          ],
+          [
+            "string",
+            "  goal: \"Give your team time back\""
+          ],
+          [
+            "string",
+            "  owner: \"Your team stays in control\""
+          ],
+          [
+            "plain",
+            ""
+          ],
+          [
+            "plain",
+            "  steps: ["
+          ],
+          [
+            "string",
+            "    \"Trigger: a new team member is confirmed\","
+          ],
+          [
+            "string",
+            "    \"Create a role-specific onboarding checklist\","
+          ],
+          [
+            "string",
+            "    \"Share approved resources and training\","
+          ],
+          [
+            "string",
+            "    \"Schedule reminders for outstanding tasks\","
+          ],
+          [
+            "string",
+            "    \"Keep access approvals with your team\","
+          ],
+          [
+            "string",
+            "    \"Track progress in one shared workspace\""
+          ],
+          [
+            "plain",
+            "  ]"
+          ],
+          [
+            "plain",
+            ""
+          ],
+          [
+            "string",
+            "  safeguards: \"Review \u00b7 retries \u00b7 activity logs\""
+          ],
+          [
+            "plain",
+            "}"
+          ]
+        ]
+      }
+    }
+  },
+  "Reporting": {
+    "icon": "\u25a5",
+    "snippets": {
+      "Weekly updates": {
+        "code": "// Weekly updates\n// Example design \u2014 no live connections\n\nworkflow {\n  goal: \"Give your team time back\"\n  owner: \"Your team stays in control\"\n\n  steps: [\n    \"Trigger: your scheduled weekly check-in\",\n    \"Collect agreed metrics from connected tools\",\n    \"Check for missing or unusual values\",\n    \"Summarize changes with source links\",\n    \"Highlight items that need a decision\",\n    \"Send the reviewed update to your team\"\n  ]\n\n  safeguards: \"Review \u00b7 retries \u00b7 activity logs\"\n}",
+        "tokens": [
+          [
+            "comment",
+            "// Weekly updates"
+          ],
+          [
+            "comment",
+            "// Example design \u2014 no live connections"
+          ],
+          [
+            "plain",
+            ""
+          ],
+          [
+            "plain",
+            "workflow {"
+          ],
+          [
+            "string",
+            "  goal: \"Give your team time back\""
+          ],
+          [
+            "string",
+            "  owner: \"Your team stays in control\""
+          ],
+          [
+            "plain",
+            ""
+          ],
+          [
+            "plain",
+            "  steps: ["
+          ],
+          [
+            "string",
+            "    \"Trigger: your scheduled weekly check-in\","
+          ],
+          [
+            "string",
+            "    \"Collect agreed metrics from connected tools\","
+          ],
+          [
+            "string",
+            "    \"Check for missing or unusual values\","
+          ],
+          [
+            "string",
+            "    \"Summarize changes with source links\","
+          ],
+          [
+            "string",
+            "    \"Highlight items that need a decision\","
+          ],
+          [
+            "string",
+            "    \"Send the reviewed update to your team\""
+          ],
+          [
+            "plain",
+            "  ]"
+          ],
+          [
+            "plain",
+            ""
+          ],
+          [
+            "string",
+            "  safeguards: \"Review \u00b7 retries \u00b7 activity logs\""
+          ],
+          [
+            "plain",
+            "}"
+          ]
+        ]
+      }
+    }
+  }
+}

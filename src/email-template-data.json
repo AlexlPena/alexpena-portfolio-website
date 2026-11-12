@@ -1,0 +1,14 @@
+{
+  "lead-intake.json": {
+    "code": "{\n  \"workflow\": \"lead-intake\",\n  \"status\": \"example blueprint\",\n  \"tools\": \"chosen with your team\",\n  \"steps\": [\n    \"Capture inquiry\",\n    \"Check required fields\",\n    \"Draft a response\",\n    \"Request approval\"\n  ],\n  \"approval\": \"human review before action\",\n  \"on_error\": \"log, notify, and pause\",\n  \"handover\": [\n    \"documentation\",\n    \"training\",\n    \"ownership\"\n  ]\n}"
+  },
+  "meeting-notes.json": {
+    "code": "{\n  \"workflow\": \"meeting-notes\",\n  \"status\": \"example blueprint\",\n  \"tools\": \"chosen with your team\",\n  \"steps\": [\n    \"Read transcript\",\n    \"Extract action items\",\n    \"Check owners and dates\",\n    \"Review and sync\"\n  ],\n  \"approval\": \"human review before action\",\n  \"on_error\": \"log, notify, and pause\",\n  \"handover\": [\n    \"documentation\",\n    \"training\",\n    \"ownership\"\n  ]\n}"
+  },
+  "team-knowledge.json": {
+    "code": "{\n  \"workflow\": \"team-knowledge\",\n  \"status\": \"example blueprint\",\n  \"tools\": \"chosen with your team\",\n  \"steps\": [\n    \"Ask a question\",\n    \"Search approved sources\",\n    \"Draft with references\",\n    \"Escalate uncertainty\"\n  ],\n  \"approval\": \"human review before action\",\n  \"on_error\": \"log, notify, and pause\",\n  \"handover\": [\n    \"documentation\",\n    \"training\",\n    \"ownership\"\n  ]\n}"
+  },
+  "weekly-report.json": {
+    "code": "{\n  \"workflow\": \"weekly-report\",\n  \"status\": \"example blueprint\",\n  \"tools\": \"chosen with your team\",\n  \"steps\": [\n    \"Collect updates\",\n    \"Validate the data\",\n    \"Summarize changes\",\n    \"Review and share\"\n  ],\n  \"approval\": \"human review before action\",\n  \"on_error\": \"log, notify, and pause\",\n  \"handover\": [\n    \"documentation\",\n    \"training\",\n    \"ownership\"\n  ]\n}"
+  }
+}
