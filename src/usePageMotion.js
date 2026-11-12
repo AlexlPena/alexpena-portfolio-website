@@ -13,6 +13,8 @@ export default function usePageMotion(root) {
       const select = gsap.utils.selector(root);
       const entrances = [];
       const enter = (target, from = {}, trigger = target, delay = 0) => {
+        // Do not hide content already visible in the prerendered first frame.
+        if (target.getBoundingClientRect().top < window.innerHeight) return;
         const tween = gsap.fromTo(target, {
           y: desktop ? 90 : 44, x: 0, opacity: 0, scale: 1,
           rotation: 0, rotationX: 0, transformPerspective: 1100, ...from,

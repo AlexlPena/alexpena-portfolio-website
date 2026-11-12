@@ -9,3 +9,5 @@ verification/
 prepared/
 *.log
 *.zip
+
+.prerender/

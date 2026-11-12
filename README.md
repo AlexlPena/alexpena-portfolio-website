@@ -40,3 +40,7 @@ git push
 ## Illustration credits
 
 User Flow, Data Extraction, and Webinar (Amico) by [Storyset](https://storyset.com/), recolored to match the business theme. Keep the linked website footer attribution. Source links and license notes are in `public/assets/storyset/README.md`.
+
+## First-load rendering
+
+The production build prerenders the complete page into `dist/index.html`; React hydrates that HTML for interactive behavior. The hero remains visible on first paint, and a local cube poster stays visible until the deferred 3D scene is ready. If WebGL fails, the poster remains. Development mode uses the standard Vite client render; use `npm run build` and `npm run preview` when checking first-load behavior.
