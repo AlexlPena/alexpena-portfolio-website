@@ -5,7 +5,7 @@ import {useGSAP} from '@gsap/react';
 import integration from './integration-data.json';
 import ServiceIllustration from './ServiceIllustration';
 
-export function Mark(){return <svg className="studio-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M4 25 13 7h6l9 18M9 17h14M16 17v11" stroke="currentColor" strokeWidth="2.3" strokeLinejoin="round"/><circle cx="16" cy="5" r="2.2" fill="currentColor"/></svg>}
+export function Mark(){return <img className="studio-mark" src="/assets/alex-pena-logo.png" alt="" aria-hidden="true" width="40" height="40"/>}
 export function Wordmark(){return <span className="studio-wordmark"><Mark/><span>Alex Pena<span className="wordmark-dot">.</span></span></span>}
 
 export function About(){return <section id="about" className="studio-about container"><div className="about-byline"><span className="portrait-mark"><Mark/></span><div><strong>Alex Pena</strong><span>Your builder, from start to finish.</span></div></div><div><p className="about-statement">Good AI should make work feel<br className="desktop-break"/> a little less like work.</p><p>I work directly with you to turn scattered tools and repetitive tasks into useful systems. Automations that fit. Training that sticks. And a clear handover, so it’s yours to run.</p></div></section>}
