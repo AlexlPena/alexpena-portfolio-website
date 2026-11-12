@@ -13,47 +13,49 @@ export default function usePageMotion(root) {
       const select = gsap.utils.selector(root);
       const entrances = [];
       const enter = (target, from = {}, trigger = target, delay = 0) => {
-        const tween = gsap.from(target, {
-          y: desktop ? 28 : 14, opacity: 0.25, ...from,
-          duration: desktop ? 0.85 : 0.55, delay, ease: 'power3.out',
-          scrollTrigger: {trigger, start: 'top 92%', once: true},
-          clearProps: 'transform,opacity',
+        const tween = gsap.fromTo(target, {
+          y: desktop ? 90 : 44, x: 0, opacity: 0, scale: 1,
+          rotation: 0, rotationX: 0, transformPerspective: 1100, ...from,
+        }, {
+          x: 0, y: 0, opacity: 1, scale: 1, rotation: 0, rotationX: 0,
+          duration: desktop ? 1.25 : 0.85, delay, ease: 'power3.out',
+          scrollTrigger: {trigger, start: 'clamp(top 88%)', toggleActions: 'play none none reverse'},
         });
         entrances.push({target, tween});
       };
 
       // The existing hero owns its cube and opening animation.
-      select('.studio-about > div').forEach((el, i) => enter(el, {x: desktop && i === 0 ? -18 : 0}, el, desktop ? i * 0.1 : 0));
-      select('.studio-section-top').forEach(el => enter(el, {y: desktop ? 22 : 12}));
+      select('.studio-about > div').forEach((el, i) => enter(el, {x: desktop ? (i === 0 ? -90 : 70) : 0}, el, desktop ? i * 0.18 : 0));
+      select('.studio-section-top').forEach(el => enter(el, {y: desktop ? 75 : 40, rotationX: desktop ? -12 : 0}));
 
       select('.studio-service-grid article').forEach((card, i) => {
         const art = card.querySelector('.service-artwork');
-        enter(art, {scale: 0.94, y: desktop ? 35 : 18}, card, desktop ? i * 0.1 : 0);
+        enter(art, {scale: desktop ? 0.78 : 0.88, y: desktop ? 110 : 55, rotation: desktop ? (i - 1) * 5 : 0}, card, desktop ? i * 0.18 : 0);
         if (desktop) {
-          gsap.fromTo(art.querySelector('img'), {y: 10, rotation: i === 1 ? 0 : (i === 0 ? -1.5 : 1.5)}, {
-            y: -7, rotation: 0, ease: 'none',
+          gsap.fromTo(art.querySelector('img'), {y: 30, scale: 0.9, rotation: (i - 1) * 4}, {
+            y: -24, scale: 1.08, rotation: 0, ease: 'none',
             scrollTrigger: {trigger: art, start: 'top bottom', end: 'bottom 15%', scrub: 0.6},
           });
         }
       });
       const tools = select('.studio-tools > div span');
-      tools.forEach((el, i) => enter(el, {y: 10}, el, desktop ? i * 0.035 : 0));
+      tools.forEach((el, i) => enter(el, {y: 30, scale: 0.85}, el, desktop ? i * 0.07 : 0));
 
-      select('.studio-workbench').forEach(el => enter(el, {y: desktop ? 40 : 16, scale: desktop ? 0.985 : 1}));
-      select('.training-copy, .prompt-workshop').forEach((el, i) => enter(el, {x: desktop ? (i ? 24 : -24) : 0, y: desktop ? 0 : 16}));
-      select('.training-topics span').forEach((el, i) => enter(el, {y: 8}, el, i * 0.06));
-      select('.oversight-copy, .oversight-demo').forEach((el, i) => enter(el, {y: desktop ? (i ? 36 : 18) : 16}));
-      select('.oversight-copy li').forEach((el, i) => enter(el, {x: 12, y: 0}, el, i * 0.08));
+      select('.studio-workbench').forEach(el => enter(el, {y: desktop ? 120 : 50, scale: desktop ? 0.88 : 0.95, rotationX: desktop ? 10 : 0}));
+      select('.training-copy, .prompt-workshop').forEach((el, i) => enter(el, {x: desktop ? (i ? 100 : -80) : 0, y: desktop ? 45 : 45, rotation: desktop && i ? 3 : 0}));
+      select('.training-topics span').forEach((el, i) => enter(el, {y: 28, scale: 0.85}, el, i * 0.06));
+      select('.oversight-copy, .oversight-demo').forEach((el, i) => enter(el, {y: desktop ? (i ? 100 : 65) : 45, scale: i ? 0.92 : 1, rotation: desktop && i ? -3 : 0}));
+      select('.oversight-copy li').forEach((el, i) => enter(el, {x: desktop ? 45 : 24, y: 0}, el, i * 0.08));
 
       select('.process-steps article').forEach((el, i) => {
-        enter(el, {y: desktop ? 26 : 14}, el, desktop ? i * 0.14 : 0);
+        enter(el, {y: desktop ? 90 : 50, scale: 0.92}, el, desktop ? i * 0.22 : 0);
         gsap.fromTo(el, {'--step-progress': 0}, {
           '--step-progress': 1, ease: 'none',
           scrollTrigger: {trigger: el, start: 'top 88%', end: 'top 50%', scrub: desktop ? 0.5 : true},
         });
       });
-      select('.contact-heading, .contact-copy').forEach((el, i) => enter(el, {y: 20}, el, desktop ? i * 0.15 : 0));
-      select('.studio-footer').forEach(el => enter(el, {y: 10, opacity: 0.6}));
+      select('.contact-heading, .contact-copy').forEach((el, i) => enter(el, {y: desktop ? 85 : 45, scale: 0.95}, el, desktop ? i * 0.15 : 0));
+      select('.studio-footer').forEach(el => enter(el, {y: 40, opacity: 0}));
 
       // Keyboard navigation should never wait for an entrance to finish.
       const focus = event => entrances.forEach(({target, tween}) => {
